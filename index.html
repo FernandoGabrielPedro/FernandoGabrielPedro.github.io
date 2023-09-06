@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resetcss.css">
+    <script src="https://kit.fontawesome.com/f95d9dd6e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="sidebar">
+    <div class="sidebar__content">
+        <div class="sidebar__top-icons-container">
+            <span class="fa-stack sidebar__top-icon-stack">
+                <i class="fa-solid fa-bell fa-stack-2x sidebar__top-icon text--color--emphasis-misc text--size--big"></i>
+                <i class="fa-regular fa-bell fa-stack-2x sidebar__top-icon text--color--faded text--size--big"></i>
+            </span>
+
+            <span class="fa-stack sidebar__top-icon-stack">
+                <i class="fa-solid fa-gear fa-stack-2x sidebar__top-icon text--color--faded text--size--big text--align--right"></i>
+            </span>
+        </div>
+
+        <div class="sidebar__profile-container">
+            <picture>
+                <img class="sidebar__profile-picture" src="resources/profile-picture.jpg" alt="Profile Picture">
+            </picture>
+
+            <p class="sidebar__profile-name text text--size--small text--color--faded text--align--center text--weight--medium">Lance Newman</p>
+        </div>
+
+        <ul class="sidebar__page-list">
+            <li class="sidebar__page-item-container">
+                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
+                    <i class="fa-solid fa-calendar sidebar__page-icon text--color--faded text--size--small"></i>
+
+                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                        Schedule
+                    </p>
+
+                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+                </div>
+                
+
+                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            List
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Create
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Report
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__page-item-container">
+                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
+                    <i class="fa-solid fa-box sidebar__page-icon text--color--faded text--size--small"></i>
+
+                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                        Orders
+                    </p>
+
+                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+                </div>
+                
+
+                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            List
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Create
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Report
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__page-item-container">
+                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
+                    <i class="fa-solid fa-user sidebar__page-icon text--color--faded text--size--small"></i>
+
+                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                        Customers
+                    </p>
+
+                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+                </div>
+                
+
+                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            List
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Create
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Report
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__page-item-container">
+                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
+                    <i class="fa-solid fa-toolbox sidebar__page-icon text--color--faded text--size--small"></i>
+
+                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                        Employees
+                    </p>
+
+                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+                </div>
+                
+
+                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            List
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Create
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Report
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__page-item-container">
+                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
+                    <i class="fa-solid fa-scissors sidebar__page-icon text--color--faded text--size--small"></i>
+
+                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                        Services
+                    </p>
+
+                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+                </div>
+                
+
+                <ul class="sidebar__page-subitems-container" id="sidebar__suppliers-subitems">
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            List
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Create
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Report
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__page-item-container">
+                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
+                    <i class="fa-solid fa-paperclip sidebar__page-icon text--color--faded text--size--small"></i>
+
+                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                        Producs
+                    </p>
+
+                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+                </div>
+                
+
+                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            List
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Create
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Report
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__page-item-container">
+                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
+                    <i class="fa-solid fa-parachute-box sidebar__page-icon text--color--faded text--size--small"></i>
+
+                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                        Suppliers
+                    </p>
+
+                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+                </div>
+                
+
+                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            List
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Create
+                        </p>
+                    </li>
+                    <li class="sidebar__page-subitem sidebar__page-item">
+                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
+
+                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
+                            Report
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="service-list">
+    <div class="service-list__container">
+        <main><h1 class="text text--size--extra-large text--color--important text--weight--thick">SERVICE LIST</h1></main>
+
+        <div class="service-list__table-container">
+            <input type="text" name="search-input" placeholder="Search services" required class="service-list__list-search-box text text--size--small">
+
+            <table class="service-list__table">
+                <tr class="service-list__table-header-row">
+                    <th class="service-list__title-box text text--size--small text--weight--thick text--align--vertical-middle">Name</th>
+
+                    <th class="service-list__title-box text text--size--small text--weight--thick text--align--vertical-middle">Description</th>
+
+                    <th class="service-list__title-box text text--size--small text--weight--thick text--align--vertical-middle">Category</th>
+
+                    <th class="service-list__title-box text text--size--small text--weight--thick service-list__small-column text--align--vertical-middle text--align--center">Price</th>
+                </tr>
+                <tr class="service-list__table-row">
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
+
+                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
+                </tr>
+                <tr class="service-list__table-row">
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
+
+                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
+                </tr>
+                <tr class="service-list__table-row">
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
+
+                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
+                </tr>
+                <tr class="service-list__table-row">
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
+
+                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
+                </tr>
+                <tr class="service-list__table-row">
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
+
+                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
+
+                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
+                </tr>
+            </table>
+
+            <div class="service-list__pagination-buttons-list">
+                <button class="service-list__pagination-button service-list__pagination-button--isFirst text text--size--small text--weight--slight text--align--center">
+                    <i class="fa-solid fa-angles-left"></i>
+                </button>
+                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">1</button>
+                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">2</button>
+                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">3</button>
+                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">4</button>
+                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">5</button>
+                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <button class="service-list__pagination-button service-list__pagination-button--isLast text text--size--small text--weight--slight text--align--center">
+                    <i class="fa-solid fa-angles-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
