@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service List</title>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -14,369 +15,716 @@
 </head>
 <body>
 
-<section class="sidebar">
-    <div class="sidebar__content">
-        <div class="sidebar__top-icons-container">
-            <span class="fa-stack sidebar__top-icon-stack">
-                <i class="fa-solid fa-bell fa-stack-2x sidebar__top-icon text--color--emphasis-misc text--size--big"></i>
-                <i class="fa-regular fa-bell fa-stack-2x sidebar__top-icon text--color--faded text--size--big"></i>
-            </span>
+<header>
+    <div class="navbar__background navbar__background--is-disabled" id="navbar__background">
+        <!-- <p class="text text--size--extra-large text--color--important text--weight--thick">PORTFOLIO</p> -->
+    </div>
+    <nav class="navbar">
+        <ul class="navbar__icon-list navbar__icon-list--is-disabled" id="navbar__icon-list">
+            <li class="navbar__item"><a href="#section-home" class="navbar__item-container">
+                <i class="fa-solid fa-house fa-inverse navbar__icon text--size--average"></i>
+                <p class="navbar__item-text text text--color--black">HOME</p>
+            </a></li>
 
-            <span class="fa-stack sidebar__top-icon-stack">
-                <i class="fa-solid fa-gear fa-stack-2x sidebar__top-icon text--color--faded text--size--big text--align--right"></i>
-            </span>
+            <li class="navbar__item"><a href="#section-about" class="navbar__item-container">
+                <i class="fa-solid fa-user fa-inverse navbar__icon text--size--average"></i>
+                <p class="navbar__item-text text text--color--black">SOBRE</p>
+            </a></li>
+
+            <li class="navbar__item"><a href="#section-portfolio" class="navbar__item-container">
+                <i class="fa-solid fa-briefcase fa-inverse navbar__icon text--size--average"></i>
+                <p class="navbar__item-text text text--color--black">PORTFOLIO</p>
+            </a></li>
+
+            <li class="navbar__item"><a href="#section-skills" class="navbar__item-container">
+                <i class="fa-solid fa-brain fa-inverse navbar__icon text--size--average"></i>
+                <p class="navbar__item-text text text--color--black">SKILLS</p>
+            </a></li>
+
+            <li class="navbar__item"><a href="#section-experiencia" class="navbar__item-container">
+                <i class="fa-solid fa-user-tie fa-inverse navbar__icon text--size--average"></i>
+                <p class="navbar__item-text text text--color--black">EXPERIÊNCIA</p>
+            </a></li>
+
+            <li class="navbar__item"><a href="#section-education" class="navbar__item-container">
+                <i class="fa-solid fa-user-graduate fa-inverse navbar__icon text--size--average"></i>
+                <p class="navbar__item-text text text--color--black">EDUCAÇÃO</p>
+            </a></li>
+
+            <li class="navbar__item"><a href="#section-contato" class="navbar__item-container">
+                <i class="fa-solid fa-envelope fa-inverse navbar__icon text--size--average"></i>
+                <p class="navbar__item-text text text--color--black">CONTATO</p>
+            </a></li>
+        </ul>
+
+        <i class="fa-solid fa-bars fa-4x fa-inverse navbar__toggle" id="navbar__toggle"></i>
+    </nav>
+</header>
+
+<section class="home section section--fullscreen section--direction--row" id="section-home">
+    <figure><img class="home__image" src="assets/ragnar-capa.jpg" alt="Foto Ragnar"></figure>
+
+    <main class="home__text-container">
+        <p class="text text--color--faded">
+            OLÁ!
+        </p>
+        <h1 class="text text--size--large text--weight--thin">
+            EU SOU <b class="text--weight--thick">RAGNAR LOTHBROOK</b>
+        </h1>
+        <p class="text text--has-paragraph-indent text--size--small text--weight--thin text--align--justify">
+            I'm a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
+        </p>
+        <p class="home__collapsible-text home__collapsible-text--is-inactive text text--has-paragraph-indent text--size--small text--weight--thin text--align--justify">
+            I was born in the vibrant coastal city of Sousse, Tunisia, known for its rich history, beautiful beaches, and Mediterranean charm. Growing up in Sousse, I was exposed to a diverse culture and a mix of modern and traditional influences that would later shape my design philosophy.
+        </p>
+        <p class="home__collapsible-text home__collapsible-text--is-inactive text text--has-paragraph-indent text--size--small text--weight--thin text--align--justify">
+            After completing my secondary education in Sousse, I pursued a degree in Computer Science at the University of Tunis. During my university years, I honed my coding skills and started participating in web development projects. I also became a part of local tech communities and attended workshops and conferences to stay updated on the latest trends in web design and development.
+        </p>
+        <p class="home__collapsible-text home__collapsible-text--is-inactive text text--has-paragraph-indent text--size--small text--weight--thin text--align--justify">
+            One of my primary professional interests is staying at the forefront of emerging technologies and design trends. I'm a firm believer in the importance of continuous learning in the rapidly evolving field of web design and development. I regularly attend workshops, conferences, and online courses to expand my knowledge and skills.
+        </p>
+        <button type="button" class="button button--vertical-margin--big" id="home__button">
+            Mais <i class="fa-solid fa-angles-right button__icon-more"></i>
+        </button>
+    </main>
+</section>
+
+<section class="about section" id="section-about">
+    <h2 class="text text--is-main-title">| SOBRE</h2>
+
+    <div class="about__content-container">
+        <div class="vertical-text-container">
+            <ul class="vertical-text-container about__info-list">
+                <li>
+                    <h3 class="text text--size--small text--color--faded text--weight--thick">NOME</h3>
+                    <p class="text text--size--regular text--color--regular text--weight--thin">RAGNAR LOTHBROOK</p>
+                </li>
+    
+                <li>
+                    <h3 class="text text--size--small text--color--faded text--weight--thick">IDADE</h3>
+                    <p class="text text--size--regular text--color--regular text--weight--thin">33 ANOS</p>
+                </li>
+    
+                <li>
+                    <h3 class="text text--size--small text--color--faded text--weight--thick">PROFISSÃO</h3>
+                    <p class="text text--size--regular text--color--regular text--weight--thin">DESENVOLVEDOR FULLSTACK</p>
+                </li>
+                
+                <li>
+                    <h3 class="text text--size--small text--color--faded text--weight--thick">NATURALIDADE</h3>
+                    <p class="text text--size--regular text--color--regular text--weight--thin">ITAJAÍ/SC</p>
+                </li>
+    
+                <li>
+                    <h3 class="text text--size--small text--color--faded text--weight--thick">NACIONALIDADE</h3>
+                    <p class="text text--size--regular text--color--regular text--weight--thin">BRASILEIRO</p>
+                </li>
+    
+                <li>
+                    <h3 class="text text--size--small text--color--faded text--weight--thick">GITHUB</h3>
+                    <p class="text text--size--regular text--color--regular text--weight--thin">WWW.GITHUB.COM/RAGNAR</p>
+                </li>
+            </ul>
+    
+            <a href="https://drive.google.com/file/d/1fcEagS-JBvKBxrO1jNVNED391pQ4Bosu/view?usp=sharing" target="_blank" class="about__resume-link button--vertical-margin--big"><button type="button" class="button">
+                Currículo <i class="fa-solid fa-angles-right button__icon-more"></i>
+            </button></a>
         </div>
+    
+        <figure class="about__image-container"><img class="about__image" src="assets/ragnar-sobre.jpg" alt="Foto Ragnar"></figure>
+    </div>
+</section>
 
-        <div class="sidebar__profile-container">
-            <picture>
-                <img class="sidebar__profile-picture" src="resources/profile-picture.jpg" alt="Profile Picture">
-            </picture>
+<section class="portfolio section" id="section-portfolio">
+    <h2 class="text text--is-main-title portfolio__main-title">| PORTFOLIO</h2>
 
-            <p class="sidebar__profile-name text text--size--small text--color--faded text--align--center text--weight--medium">Lance Newman</p>
+    <div class="portfolio__top-button-container">
+        <button type="button" class="portfolio__top-button" id="portfolio__programming-button">
+            <i class="fa-solid fa-code portfolio__top-button-icon"></i>
+            <p class="portfolio__top-button-text">Coding</p>
+        </button>
+
+        <button type="button" class="portfolio__top-button portfolio__top-button--is-inactive" id="portfolio__webdesign-button">
+            <i class="fa-solid fa-palette portfolio__top-button-icon"></i>
+            <p class="portfolio__top-button-text">Webdesign</p>
+        </button>
+
+        <button type="button" class="portfolio__top-button portfolio__top-button--is-inactive" id="portfolio__consulting-button">
+            <i class="fa-solid fa-clipboard portfolio__top-button-icon"></i>
+            <p class="portfolio__top-button-text">Consulting</p>
+        </button>
+    </div>
+
+    <div class="portfolio__website-container carousel slide" data-ride="carousel" id="portfolio__website-container">
+        <div class="portfolio__website-inner-container--carousel carousel-inner" id="portfolio__website-inner-container">
+            <figure class="portfolio__website-image-container carousel-item active"><img class="portfolio__website-image" src="assets/websites/website1.png" alt="Website 1"></figure>
+            <figure class="portfolio__website-image-container carousel-item">
+                <img class="portfolio__website-image" src="assets/websites/website2.png" alt="Website 2">
+            </figure>
+            <figure class="portfolio__website-image-container carousel-item">
+                <img class="portfolio__website-image" src="assets/websites/website3.png" alt="Website 3">
+            </figure>
+            <figure class="portfolio__website-image-container carousel-item">
+                <img class="portfolio__website-image" src="assets/websites/website4.png" alt="Website 4">
+            </figure>
+            <figure class="portfolio__website-image-container carousel-item">
+                <img class="portfolio__website-image" src="assets/websites/website5.png" alt="Website 5">
+            </figure>
+            <figure class="portfolio__website-image-container carousel-item">
+                <img class="portfolio__website-image" src="assets/websites/website6.png" alt="Website 6">
+            </figure>
         </div>
+        <a class="carousel-control-prev" href="#portfolio__website-container" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#portfolio__website-container" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-        <ul class="sidebar__page-list">
-            <li class="sidebar__page-item-container">
-                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
-                    <i class="fa-solid fa-calendar sidebar__page-icon text--color--faded text--size--small"></i>
+    <button type="button" class="button" id="portfolio__more-button">
+        Mais <i class="fa-solid fa-angles-right button__icon-more"></i>
+    </button>
+</section>
 
-                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                        Schedule
-                    </p>
+<section class="skills section" id="section-skills">
+    <h2 class="text text--is-main-title">| SKILLS</h2>
 
-                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+    <ul class="skills__skills-grid">
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">HTML</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/html.png" alt="HTML"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">CSS</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/css.png" alt="CSS"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">C#</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/csharp.png" alt="C#"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">JavaScript</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/javascript.png" alt="JavaScript"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">.NET Core</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/netcore.png" alt=".NET Core"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">TypeScript</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/ts.png" alt="TypeScript"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">React</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/react.png" alt="React"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">VS Code</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/vscode.png" alt="VS Code"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">GIT</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/git.png" alt="GIT"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">PostgreSQL</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/postgresql.png" alt="PostgreSQL"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">Webpack</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/webpack.png" alt="Webpack"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">Nginx</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/nginx.png" alt="Nginx"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">Ubuntu</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/ubuntu.png" alt="Ubuntu"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">AWS</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/aws.png" alt="AWS"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">Photoshop</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/photoshop.png" alt="Photoshop"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+
+        <li class="skills__skill-item">
+            <p class="text text--color--important text--size--small text--align--center text--weight--thick">Figma</p>
+            <figure class="skills__skill-img-container"><img class="skills__skill-img" src="assets/figma.png" alt="Figma"></figure>
+            <div class="skills__star-container">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section class="experience section" id="section-experiencia">
+    <h2 class="text text--is-main-title">| EXPERIÊNCIA</h2>
+
+    <div class="experience__main-container">
+        <div class="experience__list-container">
+            <ul class="experience__job-list">
+                <li class="experience__job-item">
+                    <div class="experience__job-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center"> 2021 - Presente</p>
+                    </div>
+                    <h3 class="text text--size--regular text--weight--thick">TWITTER</h3>
+                    <p class="text text--size--small text--weight--thin">Cargo de desenvolvedor sênior na equipe de criação do aplicativo X.</p>
+                </li>
+
+                <li class="experience__job-item">
+                    <div class="experience__job-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center"> 2018 - 2021</p>
+                    </div>
+                    <h3 class="text text--size--regular text--weight--thick">FACEBOOK</h3>
+                    <p class="text text--size--small text--weight--thin">Cargo de desenvolvedor pleno na equipe de criação da biblioteca React.</p>
+                </li>
+
+                <li class="experience__job-item">
+                    <div class="experience__job-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center"> 2014 - 2018</p>
+                    </div>
+                    <h3 class="text text--size--regular text--weight--thick">BOOKING</h3>
+                    <p class="text text--size--small text--weight--thin">Cargo de desenvolvedor junior na equipe de desenvolvimento back end.</p>
+                </li>
+
+                <li class="experience__job-item experience__job-item-collapsible experience__job-item-collapsible--is-inactive">
+                    <div class="experience__job-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2012 - 2014</p>
+                    </div>
+                    <h3 class="text text--size--regular text--weight--thick">GOOGLE</h3>
+                    <p class="text text--size--small text--weight--thin">Estágio na Google atuando na equipe de desenvolvimento de ferramentas para o ADS.</p>
+                </li>
+
+                <li class="experience__job-item experience__job-item-collapsible experience__job-item-collapsible--is-inactive">
+                    <div class="experience__job-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2008 - 2012</p>
+                    </div>
+                    <h3 class="text text--size--regular text--weight--thick">BING</h3>
+                    <p class="text text--size--small text--weight--thin">Estágio no Bing atuando na equipe de manutenção da ferramenta de busca.</p>
+                </li>
+            </ul>
+
+            <button type="button" class="button" id="experience__button">
+                Mais <i class="fa-solid fa-angles-right button__icon-more"></i>
+            </button>
+        </div>
+        
+        <div class="experience__experience-grid">
+
+            <div class="experience__grid-item">
+                <h3 class="text text--size--extra-large text--color--important text--weight--thick">9</h3>
+                <p class="text text--size--tiny text--color--faded text--weight--thick text--align--center">ANOS DE EXPERIÊNCIA</p>
+            </div>
+
+            <div class="experience__grid-item">
+                <h3 class="text text--size--extra-large text--color--important text--weight--thick">16</h3>
+                <p class="text text--size--tiny text--color--faded text--weight--thick text--align--center">PROJETOS INDIVIDUAIS</p>
+            </div>
+
+            <div class="experience__grid-item">
+                <h3 class="text text--size--extra-large text--color--important text--weight--thick">72</h3>
+                <p class="text text--size--tiny text--color--faded text--weight--thick text--align--center">PROJETOS EM EQUIPE</p>
+            </div>
+
+            <div class="experience__grid-item">
+                <h3 class="text text--size--extra-large text--color--important text--weight--thick">87</h3>
+                <p class="text text--size--tiny text--color--faded text--weight--thick text--align--center">CURSOS DE ESPECIALIZAÇÃO</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="education section" id="section-education">
+    <h2 class="text text--is-main-title">| EDUCAÇÃO</h2>
+
+    <div class="education__main-container">
+        <article class="education__list-container">
+            <h3 class="education__list-title text text--size--small text--weight--medium text--align--center">BACHARELADO E PÓS-GRADUAÇÃO</h3>
+
+            <ul class="education__education-list">
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2021 - 2023</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">COMPUTAÇÃO APLICADA</h4>
+                    <p class="text text--size--small text--weight--thin">Mestrado em Computação Aplicada pela UFSP.</p>
+                </li>
+
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2017 - 2020</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">BIG DATA</h4>
+                    <p class="text text--size--small text--weight--thin">Pós graduado em Big Data pela UFSC.</p>
+                </li>
+
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2012 - 2016</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">CIÊNCIA DA COMPUTAÇÃO</h4>
+                    <p class="text text--size--small text--weight--thin">Bacharelado em Ciência da Computação pela Univali.</p>
+                </li>
+
+                <li class="education__education-item education__education-item-collapsible education__education-item-collapsible--is-inactive">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2011 - 2012</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">ENGENHARIA DA COMPUTAÇÃO</h4>
+                    <p class="text text--size--small text--weight--thin">Bacharelado em Engenharia da Computação pela Univali.</p>
+                </li>
+
+                <li class="education__education-item education__education-item-collapsible education__education-item-collapsible--is-inactive">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2010 - 2011</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">DESIGN GRÁFICO</h4>
+                    <p class="text text--size--small text--weight--thin">Bacharelado em Design Gráfico pela Univali.</p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="education__list-container">
+            <h3 class="education__list-title text text--size--small text--weight--medium text--align--center">CURSOS DE ESPECIALIZAÇÃO</h3>
+
+            <ul class="education__education-list">
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2023 - Presente</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">FULLSTACK</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de formação FullStack ministrado por Jackson Camara. Total de 500 horas concluídas.</p>
+                </li>
+
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2021 - 2022</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">BACKEND</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de formação BackEnd ministrado por Jackson Camara. Total de 500 horas concluídas.</p>
+                </li>
+
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2019 - 2020</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">FRONTEND</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de formação FrontEnd ministrado por Jackson Camara. Total de 500 horas concluídas.</p>
+                </li>
+
+                <li class="education__education-item education__education-item-collapsible education__education-item-collapsible--is-inactive">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2017 - 2019</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">DESIGN GRÁFICO</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de especialização em Design Gráfico ministrado por Jackson Camara. Total de 500 horas concluídas.</p>
+                </li>
+
+                <li class="education__education-item education__education-item-collapsible education__education-item-collapsible--is-inactive">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2016 - 2017</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">BANCO DE DADOS</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de especialização em Banco de Dados ministrado por Lucas Debatin. Total de 500 horas concluídas.</p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="education__list-container">
+            <h3 class="education__list-title text text--size--small text--weight--medium text--align--center">CURSOS DE IDIOMAS</h3>
+
+            <ul class="education__education-list">
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2022 - 2023</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">INGLÊS</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de Inglês particular. Nível c2.</p>
+                </li>
+
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2019 - 2021</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">FRANCÊS</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de Francês na Univali Idiomas. Níveis a1, a2, b1.</p>
+                </li>
+
+                <li class="education__education-item">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2016 - 2018</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">INGLÊS</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de Inglês na Wizard. Níveis b2, c1.</p>
+                </li>
+
+                <li class="education__education-item education__education-item-collapsible education__education-item-collapsible--is-inactive">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2014 - 2015</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">ESPANHOL</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de Espanhol na Univali Idiomas. Níveis a1, a2, b1.</p>
+                </li>
+
+                <li class="education__education-item education__education-item-collapsible education__education-item-collapsible--is-inactive">
+                    <div class="education__education-date">
+                        <i class="fa-solid fa-calendar text--size--small text--color--important text--align--center"></i>
+                        <p class="text text--size--small text--color--faded text--weight--medium text--align--center">2014 - 2015</p>
+                    </div>
+                    <h4 class="text text--size--regular text--weight--thick">INGLÊS</h4>
+                    <p class="text text--size--small text--weight--thin">Curso de Inglês na Univali Idiomas. Níveis a1, a2, b1.</p>
+                </li>
+            </ul>
+        </article>
+    </div>
+
+    <button type="button" class="button button--vertical-margin--big" id="education__button">
+        Mais <i class="fa-solid fa-angles-right button__icon-more"></i>
+    </button>
+</div>
+
+<div class="contact section" id="section-contato">
+    <h2 class="text text--is-main-title">| CONTATO</h2>
+
+    <div class="contact__main-container">
+        <ul class="contact__socials-list">
+            <li class="contact__socials-list-item">
+                <span class="fa-stack fa-2x contact__item-icon-wrapper">
+                    <i class="fa-solid fa-square fa-stack-2x contact__icon-background text--size--extra-large"></i>
+                    <i class="fa-regular fa-envelope fa-stack-1x fa-inverse contact__main-icon text--size--average"></i>
+                </span>
+                <div class="contact__text-container">
+                    <h2 class="text text--size--small text--color--faded text--weight--thin">E-MAIL</h2>
+                    <P class="text text--size--small text--weight--thick">meuemail@gmail.com</P>
                 </div>
-                
-
-                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            List
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Create
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Report
-                        </p>
-                    </li>
-                </ul>
             </li>
-            <li class="sidebar__page-item-container">
-                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
-                    <i class="fa-solid fa-box sidebar__page-icon text--color--faded text--size--small"></i>
 
-                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                        Orders
-                    </p>
-
-                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+            <li class="contact__socials-list-item">
+                <span class="fa-stack fa-2x contact__item-icon-wrapper">
+                    <i class="fa-solid fa-square fa-stack-2x contact__icon-background text--size--extra-large"></i>
+                    <i class="fa-solid fa-phone fa-stack-1x fa-inverse contact__main-icon text--size--average"></i>
+                </span>
+                <div class="contact__text-container">
+                    <h2 class="text text--size--small text--color--faded text--weight--thin">TELEPHONE</h2>
+                    <P class="text text--size--small text--weight--thick">(47) 9 9999-9999</P>
                 </div>
-                
-
-                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            List
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Create
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Report
-                        </p>
-                    </li>
-                </ul>
             </li>
-            <li class="sidebar__page-item-container">
-                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
-                    <i class="fa-solid fa-user sidebar__page-icon text--color--faded text--size--small"></i>
 
-                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                        Customers
-                    </p>
-
-                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+            <li class="contact__socials-list-item">
+                <span class="fa-stack fa-2x contact__item-icon-wrapper">
+                    <i class="fa-solid fa-square fa-stack-2x contact__icon-background text--size--extra-large"></i>
+                    <i class="fa-brands fa-telegram fa-stack-1x fa-inverse contact__main-icon text--size--average"></i>
+                </span>
+                <div class="contact__text-container">
+                    <h2 class="text text--size--small text--color--faded text--weight--thin">TELEGRAM</h2>
+                    <P class="text text--size--small text--weight--thick">(47) 9 9999-9999</P>
                 </div>
-                
-
-                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            List
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Create
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Report
-                        </p>
-                    </li>
-                </ul>
             </li>
-            <li class="sidebar__page-item-container">
-                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
-                    <i class="fa-solid fa-toolbox sidebar__page-icon text--color--faded text--size--small"></i>
 
-                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                        Employees
-                    </p>
-
-                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
+            <li class="contact__socials-list-item">
+                <span class="fa-stack fa-2x contact__item-icon-wrapper">
+                    <i class="fa-solid fa-square fa-stack-2x contact__icon-background text--size--extra-large"></i>
+                    <i class="fa-brands fa-discord fa-stack-1x fa-inverse contact__main-icon text--size--average"></i>
+                </span>
+                <div class="contact__text-container">
+                    <h2 class="text text--size--small text--color--faded text--weight--thin">DISCORD</h2>
+                    <P class="text text--size--small text--weight--thick">@meudiscord</P>
                 </div>
-                
-
-                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            List
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Create
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Report
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li class="sidebar__page-item-container">
-                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
-                    <i class="fa-solid fa-scissors sidebar__page-icon text--color--faded text--size--small"></i>
-
-                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                        Services
-                    </p>
-
-                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
-                </div>
-                
-
-                <ul class="sidebar__page-subitems-container" id="sidebar__suppliers-subitems">
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            List
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Create
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Report
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li class="sidebar__page-item-container">
-                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
-                    <i class="fa-solid fa-paperclip sidebar__page-icon text--color--faded text--size--small"></i>
-
-                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                        Producs
-                    </p>
-
-                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
-                </div>
-                
-
-                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            List
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Create
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Report
-                        </p>
-                    </li>
-                </ul>
-            </li>
-            <li class="sidebar__page-item-container">
-                <div class="sidebar__page-item-major sidebar__page-item" id="sidebar__supliers-main-item">
-                    <i class="fa-solid fa-parachute-box sidebar__page-icon text--color--faded text--size--small"></i>
-
-                    <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                        Suppliers
-                    </p>
-
-                    <i class="fa-solid fa-angle-right sidebar__page-arrow text--color--faded text--size--small"></i>
-                </div>
-                
-
-                <ul class="sidebar__page-subitems-container sidebar__page-subitems-container--is-disabled" id="sidebar__suppliers-subitems">
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            List
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Create
-                        </p>
-                    </li>
-                    <li class="sidebar__page-subitem sidebar__page-item">
-                        <i class="fa-solid fa-circle sidebar__page-icon text--color--faded text--size--small"></i>
-
-                        <p class="sidebar__page-title text text--color--faded text--size--small text--weight--thin">
-                            Report
-                        </p>
-                    </li>
-                </ul>
             </li>
         </ul>
+
+        <form method="POST" class="contact__forms" id="email-form">
+            <input type="hidden" name="access_key" value="f341e65d-dfd2-4d8b-acf4-6c05a7b2e5b7">
+            
+            <input type="text" name="name" placeholder="NOME" required class="contact__forms-item text text--size--small">
+            <input type="email" name="email" placeholder="EMAIL" pattern="^\w+([.-_]\w+)*@\w+(.\w+)+$" required class="contact__forms-item text text--size--small">
+            <input type="text" name="phone" placeholder="TELEFONE" required class="contact__forms-item text text--size--small">
+            <input type="text" name="subject" placeholder="ASSUNTO" required class="contact__forms-item text text--size--small">
+            <textarea name="message" placeholder="MENSAGEM" required class="contact__forms-item contact__forms-item--is-message text text--size--small"></textarea>
+            <button type="submit" class="button">
+                Send <i class="fa-solid fa-angles-right button__icon-more"></i>
+            </button>
+        </form>
     </div>
-</section>
+    
+    <ul class="contact__links-list">
+        <li><a href="https://wa.me/5549998098620" target="_blank">
+            <span class="fa-stack fa-2x contact__link-item">
+                <i class="fa-solid fa-circle fa-stack-2x contact__link-background-circle"></i>
+                <i class="fa-brands fa-whatsapp fa-stack-1x fa-inverse contact__link-icon"></i>
+            </span>
+        </a></li>
 
+        <li><a href="https://www.linkedin.com" target="_blank">
+            <span class="fa-stack fa-2x contact__link-item">
+                <i class="fa-solid fa-circle fa-stack-2x contact__link-background-circle"></i>
+                <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse contact__link-icon"></i>
+            </span>
+        </a></li>
 
-<section class="service-list">
-    <div class="service-list__container">
-        <main><h1 class="text text--size--extra-large text--color--important text--weight--thick">SERVICE LIST</h1></main>
+        <li><a href="https://www.twitter.com" target="_blank">
+            <span class="fa-stack fa-2x contact__link-item">
+                <i class="fa-solid fa-circle fa-stack-2x contact__link-background-circle"></i>
+                <i class="fa-brands fa-twitter fa-stack-1x fa-inverse contact__link-icon"></i>
+            </span>
+        </a></li>
 
-        <div class="service-list__table-container">
-            <input type="text" name="search-input" placeholder="Search services" required class="service-list__list-search-box text text--size--small">
+        <li><a href="https://www.instagram.com" target="_blank">
+            <span class="fa-stack fa-2x contact__link-item">
+                <i class="fa-solid fa-circle fa-stack-2x contact__link-background-circle"></i>
+                <i class="fa-brands fa-instagram fa-stack-1x fa-inverse contact__link-icon"></i>
+            </span>
+        </a></li>
 
-            <table class="service-list__table">
-                <tr class="service-list__table-header-row">
-                    <th class="service-list__title-box text text--size--small text--weight--thick text--align--vertical-middle">Name</th>
+        <li><a href="https://www.youtube.com" target="_blank">
+            <span class="fa-stack fa-2x contact__link-item">
+                <i class="fa-solid fa-circle fa-stack-2x contact__link-background-circle"></i>
+                <i class="fa-brands fa-youtube fa-stack-1x fa-inverse contact__link-icon"></i>
+            </span>
+        </a></li>
 
-                    <th class="service-list__title-box text text--size--small text--weight--thick text--align--vertical-middle">Description</th>
+        <li><a href="https://www.facebook.com" target="_blank">
+            <span class="fa-stack fa-2x contact__link-item">
+                <i class="fa-solid fa-circle fa-stack-2x contact__link-background-circle"></i>
+                <i class="fa-brands fa-facebook fa-stack-1x fa-inverse contact__link-icon"></i>
+            </span>
+        </a></li>
+    </ul>
+</div>
 
-                    <th class="service-list__title-box text text--size--small text--weight--thick text--align--vertical-middle">Category</th>
-
-                    <th class="service-list__title-box text text--size--small text--weight--thick service-list__small-column text--align--vertical-middle text--align--center">Price</th>
-                </tr>
-                <tr class="service-list__table-row">
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
-
-                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
-                </tr>
-                <tr class="service-list__table-row">
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
-
-                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
-                </tr>
-                <tr class="service-list__table-row">
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
-
-                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
-                </tr>
-                <tr class="service-list__table-row">
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
-
-                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
-                </tr>
-                <tr class="service-list__table-row">
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Service</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">A barbershop service.</td>
-
-                    <td class="service-list__table-box text text--size--small text--weight--slight text--align--vertical-middle">Hair</td>
-
-                    <td class="service-list__table-box service-list__table-center-box text text--size--small text--weight--slight text--align--vertical-middle service-list__table-box">$15.00</td>
-                </tr>
-            </table>
-
-            <div class="service-list__pagination-buttons-list">
-                <button class="service-list__pagination-button service-list__pagination-button--isFirst text text--size--small text--weight--slight text--align--center">
-                    <i class="fa-solid fa-angles-left"></i>
-                </button>
-                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">
-                    <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">1</button>
-                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">2</button>
-                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">3</button>
-                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">4</button>
-                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">5</button>
-                <button class="service-list__pagination-button text text--size--small text--weight--slight text--align--center">
-                    <i class="fa-solid fa-angle-right"></i>
-                </button>
-                <button class="service-list__pagination-button service-list__pagination-button--isLast text text--size--small text--weight--slight text--align--center">
-                    <i class="fa-solid fa-angles-right"></i>
-                </button>
-            </div>
-        </div>
+<footer class="footer">
+    <div class="footer__forms-result footer__forms-result--is-disabled" id="form-result">
+        <p class="text text--size--small text--weight--thin text--color--faded">Processing...</p>
     </div>
-</section>
+</footer>
+
+<script src="utils.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
+</html>
