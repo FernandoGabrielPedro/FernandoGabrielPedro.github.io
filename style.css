@@ -101,7 +101,7 @@ body {
     font-family: 'Roboto', sans-serif;
     max-width:fit-content;
     font-size: clamp(20px, 1.8vmax, 1.8vmax);
-    font-weight: 400;
+    font-weight: 100;
     background-color: var(--primary);
     color:white;
     border-radius: 15px;
